@@ -1,5 +1,10 @@
+.DS_Store
+.gitignore
 pyproject.toml
-txteditor/main.py
+txteditor/.DS_Store
+txteditor/README.md
+txteditor/__main__.py
+txteditor/functions.py
 txteditor.egg-info/PKG-INFO
 txteditor.egg-info/SOURCES.txt
 txteditor.egg-info/dependency_links.txt
