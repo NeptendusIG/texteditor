@@ -8,7 +8,7 @@ L'application va se construire autour d'une variable contenant l'entièreté du 
 """
 # -- IMPORTS --
 # Modules
-from utility.utility import GUI
+from utility import GUI
 from tkinter import filedialog
 import tkinter as tk
 import ttkbootstrap as ttk
@@ -51,12 +51,13 @@ def quitter_application(root, text_var):
 
 
 # -- VARIABLES INITIALES --
-root = GUI.set_basic_window("Text Editor")
-main_text = ttk.Text(root)
-setattr(main_text, "path", "")
+# root = GUI.set_basic_window("Text Editor")
+# main_text = ttk.Text(root)
+# setattr(main_text, "path", "")
 
 
 # -- FONCTIONS MAÎTRES --
+
 def demarrer_application(root, text):
     """Lancement de l'application"""
     text.pack(expand=True, fill="both")
@@ -80,12 +81,6 @@ def demarrer_application(root, text):
     root.mainloop()
 
 
-# -- PROGRAMME --
-if __name__ == '__main__':
-    # - Variables -
-
-    # - Programme -
-    demarrer_application(root, main_text)
 
 
 

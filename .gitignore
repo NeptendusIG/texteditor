@@ -1,0 +1,26 @@
+# Exclure les fichiers temporaires ou binaires
+*.log
+*.pyc
+*.pyo
+*.~
+*.pickle
+
+# Exclure des fichiers spécifiques
+sandbox.py
+test.py
+log_config.py
+
+# Exclure les dossiers spécifiques
+__pycache__/
+env/
+venv/
+build/
+dist/
+*.egg-info/
+*/data/
+*/__pycache__/
+
+
+# Exclure les fichiers des éditeurs
+.vscode/
+.idea/
